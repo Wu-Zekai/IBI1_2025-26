@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
-countries = (['UK', 'China', 'Italy', 'Brazil', 'USA'])
-population_2020=([66.7,1426.0,59.4,208.6,331.6])
-population_2024=([69.2, 1410, 58.9, 212.0, 340.1])
-changes=(population_2020-population_2024)/population_2020*100
+countries = np.array(['UK', 'China', 'Italy', 'Brazil', 'USA'])
+population_2020=np.array([66.7,1426.0,59.4,208.6,331.6])
+population_2024=np.array([69.2, 1410, 58.9, 212.0, 340.1])
+population_2020 = np.array(population_2020)
+population_2024 = np.array(population_2024)
+changes=(population_2024-population_2020)/population_2020*100
+print('Population growth rate from 2020 to 2024:' + str(changes)) 
 sorted_indices = np.argsort(changes)
 sorted_countries = [countries[i] for i in sorted_indices]
 sorted_changes = [changes[i] for i in sorted_indices]
