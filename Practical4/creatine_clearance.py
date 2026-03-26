@@ -4,7 +4,8 @@ weight = float(input("Please input your weight（kg）："))
 gender = input("Please input your gender（male/female）：").strip().lower()
 cr = float(input("Please input your creatine concentration, Cr, in（µmol/l）："))
 
-# check error
+# check error by setting it to false first 
+#if error occurs, set it to true and print error message
 error = False
 
 # check age
@@ -24,7 +25,7 @@ if cr <= 0 or cr >= 100:
 
 # check gender
 if gender not in ["male", "female"]:
-    print("error gender should be male or female")
+    print("error: gender should be male or female")
     error = True
 
 
