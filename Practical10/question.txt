@@ -1,0 +1,14 @@
+Question: 
+How has the relationship between the DALY rates in China and the United Kingdom 
+changed over time between 1990 and 2019? Are they becoming more similar?
+
+Code Location: 
+The code to answer this question starts at Line [此处填入你代码中 # 任务 6 开始的行号].
+
+Discussion:
+1. Result: In 1990, China had a significantly higher DALY rate (around 38,000) 
+   compared to the UK (around 25,000). However, China's DALY rate has shown a 
+   sharp and consistent decline over the 30-year period.
+2. Similarity: By 2019, the gap between the two countries has narrowed 
+   substantially. The data shows they are becoming much more similar.
+3. Reasons: This trend was expected. China's rapid economic growth, improvements 
