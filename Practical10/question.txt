@@ -3,7 +3,8 @@ How has the relationship between the DALY rates in China and the United Kingdom
 changed over time between 1990 and 2019? Are they becoming more similar?
 
 Code Location: 
-The code to answer this question starts at Line [此处填入你代码中 # 任务 6 开始的行号].
+The code to answer this question starts at the bottom of dalys.py, under the 
+section "Task 6: Self-Question Analysis".
 
 Discussion:
 1. Result: In 1990, China had a significantly higher DALY rate (around 38,000) 
