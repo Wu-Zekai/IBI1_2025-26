@@ -2,3 +2,4 @@ Hello, my name is Wu Zekai.
 I like drinking coffee and eating burgers
 I am enjoying studying IBI1  
 I am happy that I can push my repo from Visual Studio Code to GitHub
+I wish to achieve high marks for my code portfolio
