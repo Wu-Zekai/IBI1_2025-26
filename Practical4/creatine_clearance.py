@@ -1,3 +1,15 @@
+# Pseudocode:
+# 1. Store input values for age, weight, gender, and creatine (Cr).
+# 2. Check if inputs are within valid ranges:
+#    - age < 100
+#    - 20 < weight < 80
+#    - 0 < creatine < 100
+#    - gender is 'male' or 'female'
+# 3. If any input is invalid, print an error message stating which variable is wrong.
+# 4. If all inputs are valid, calculate CrCl using the Cockcroft-Gault formula.
+# 5. Apply the 0.85 multiplier if the patient is female.
+# 6. Display the final CrCl result.
+
 # get inputs
 age = int(input("Please input your ages："))
 weight = float(input("Please input your weight（kg）："))
