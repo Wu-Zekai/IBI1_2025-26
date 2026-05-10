@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:This programm caculates the sum of ten random numbers from 1 to 10.
+# Answer:This programm caculates the sum of 11 random numbers from 1 to 10.
 
 # Import libraries
 # randint allows drawing a random number,
