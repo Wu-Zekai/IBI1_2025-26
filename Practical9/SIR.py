@@ -1,3 +1,24 @@
+# PSEUDOCODE:
+# 1. INITIALIZE model parameters:
+#    - Total population (N) = 10,000.
+#    - Set initial counts: Infected (I)=1, Recovered (R)=0, Susceptible (S)=N-1.
+#    - Define rates: Infection rate (beta)=0.3, Recovery rate (gamma)=0.05.
+# 2. CREATE lists (history) to store the counts of S, I, and R at each time step.
+# 3. ENTER a time loop for 1,000 iterations:
+#    a. CALCULATE the infection probability (p_inf):
+#       - p_inf = beta * (current infected / total population).
+#    b. DETERMINE new infections:
+#       - Use a random choice process for each susceptible individual based on p_inf.
+#       - Sum the total number of new infections.
+#    c. DETERMINE new recoveries:
+#       - Use a random choice process for each infected individual based on gamma.
+#       - Sum the total number of new recoveries.
+#    d. UPDATE current counts:
+#       - Subtract new infections from S.
+#       - Add new infections and subtract new recoveries from I.
+#       - Add new recoveries to R.
+#    e. RECORD updated counts into the history lists.
+
 import numpy as np
 import matplotlib.pyplot as plt
 
