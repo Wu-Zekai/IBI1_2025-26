@@ -1,3 +1,28 @@
+# PSEUDOCODE:
+# 1. IMPORT necessary libraries: pandas for data manipulation, 
+#    matplotlib for visualization, and os for directory management.
+# 2. LOAD the dataset: Read "dalys-rate-from-all-causes.csv" into 
+#    a pandas DataFrame named 'dalys_data'.
+# 3. ANALYZE Afghanistan data:
+#    - Use 'iloc' to slice the first 10 rows and the 3rd and 4th columns (Year, DALYs).
+#    - Inspect results to identify the year with the maximum DALY rate.
+# 4. ANALYZE Zimbabwe data:
+#    - Create a Boolean mask where Entity equals "Zimbabwe".
+#    - Use 'loc' to extract the Year and DALY columns for this country.
+#    - Determine the duration of the data collection (first and last years).
+# 5. FIND 2019 Global Extremes:
+#    - Filter the DataFrame for the year 2019.
+#    - Sort the DALY values to identify countries with the highest and lowest rates.
+# 6. VISUALIZE Trend for an Extreme Case:
+#    - Select the country with the minimum DALYs in 2019.
+#    - Plot its DALY rate over time using a scatter/line plot with markers ('bo-').
+#    - Label axes (Year, DALYs Rate) and add a descriptive title.
+# 7. PERFORM Comparative Analysis (Task 6):
+#    - Extract time-series data for China and the United Kingdom.
+#    - Plot both datasets on a single graph to compare their trajectories.
+#    - Add a legend, grid, and formatted X-axis ticks to enhance clarity.
+#    - Evaluate if the disease burdens are becoming more similar over time.
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
