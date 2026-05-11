@@ -7,7 +7,7 @@ class food_item:
         self.carbs = carbs
         self.fat = fat
 
-# 2. Define the function to calculate and report daily nutrition intake
+# Define the function to calculate and report daily nutrition intake
 def report_daily_nutrition(consumed_list):
     """
     Receives a list of food_item objects, calculates and reports the total nutrition intake
@@ -46,7 +46,7 @@ def report_daily_nutrition(consumed_list):
         "fat": total_fat
     }
 
-# --- Example usage of the food_item class and report_daily_nutrition function ---
+# Example usage of the food_item class and report_daily_nutrition function
 
 apple = food_item("Apple", 60, 0.3, 15, 0.5)
 steak = food_item("Steak", 600, 50, 0, 45)
