@@ -1,3 +1,14 @@
+# PSEUDOCODE:
+# 1. Define function 'predict_protein_mass' taking a string 'sequence' as input.
+# 2. Define a weight table (dictionary) for all valid amino acids.
+# 3. Set total_mass starting point to 0.0.
+# 4. Loop through each amino acid in the provided sequence.
+# 5. Check if the current amino acid is in the weight table:
+#    - If yes: Add the weight to the running total.
+#    - If no: Stop and return an error message mentioning the invalid residue.
+# 6. After the loop, return the final calculated total_mass.
+# 7. Provide example calls to test the function's logic.
+
 def predict_protein_mass(sequence):
     """
     Calculate the total mass of a protein based on its amino acid sequence.
