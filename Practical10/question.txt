@@ -12,4 +12,11 @@ Discussion:
    sharp and consistent decline over the 30-year period.
 2. Similarity: By 2019, the gap between the two countries has narrowed 
    substantially. The data shows they are becoming much more similar.
-3. Reasons: This trend was expected. China's rapid economic growth, improvements 
+3. Reasons: This trend aligns with expectations regarding global health transitions. 
+   China's rapid economic growth has led to significant improvements in public health 
+   infrastructure, better sanitation, and broader access to vaccination and 
+   healthcare services. This has greatly reduced the burden of infectious diseases 
+   and neonatal conditions. In contrast, the UK, as a long-developed nation, 
+   started from a lower baseline and primarily deals with non-communicable 
+   diseases associated with an aging population, leading to a slower rate of 
+   decline in DALYs compared to a rapidly developing nation like China.
