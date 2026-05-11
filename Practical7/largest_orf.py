@@ -1,3 +1,17 @@
+# PSEUDOCODE:
+# 1. Import the regular expression (re) library to handle pattern matching.
+# 2. Define the mRNA sequence as a string variable 'seq'.
+# 3. Define a regex pattern to identify in-frame Open Reading Frames (ORFs):
+#    - Must start with 'AUG'.
+#    - Followed by zero or more groups of 3 nucleotides (triplets).
+#    - Must end with a stop codon ('UAA', 'UAG', or 'UGA').
+# 4. Use re.findall to extract all matching ORFs from the sequence into a list.
+# 5. Check if the list of ORFs is not empty:
+#    - If found, identify the longest ORF using the max function with key=len.
+#    - Print the longest ORF and its character count (length).
+# 6. If no ORF is found:
+#    - Print a message stating no valid ORF exists and report length as 0.
+
 import re
 
 seq = 'AAGAUACAUGCAAGUGGUGUGUCUGUUCUGAGAGGGCCUAAAAG'
