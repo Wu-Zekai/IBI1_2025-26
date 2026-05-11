@@ -1,3 +1,25 @@
+# PSEUDOCODE:
+# 1. DEFINE model constants:
+#    - Total population (N) = 10,000.
+#    - Infection rate (beta) = 0.3, Recovery rate (gamma) = 0.05.
+#    - Simulation duration = 1,000 time steps.
+# 2. CREATE a list of vaccination rates to test (e.g., from 0% to 100% in 10% increments).
+# 3. SET UP the plotting figure and dimensions.
+# 4. LOOP through each vaccination rate in the list:
+#    a. INITIALIZE the population for the current rate:
+#       - Calculate number of vaccinated individuals (V_count).
+#       - Set initial Infected (I)=1, Recovered (R)=0.
+#       - Remaining Susceptible (S) = N - V_count - I.
+#    b. CREATE a list to store the history of infected individuals for this specific rate.
+#    c. ENTER a time loop for 1,000 steps (stochastic simulation):
+#       i.  Calculate infection probability (p_inf) and recovery probability (p_rec).
+#       ii. Determine new infections and recoveries using random sampling (stochastic process).
+#       iii. Update S, I, and R counts based on the random results.
+#       iv. Append the current infected count to the history list.
+#    d. PLOT the infection history curve:
+#       - Assign a distinct color to the curve using a colormap (e.g., viridis).
+#       - Label the curve with the corresponding vaccination percentage.
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm  
