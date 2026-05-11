@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm  
 
-# --- 1. define the parameters ---
+#  define the parameters 
 N = 10000          # total population (keep as 10000)
 beta = 0.3         # infection rate
 gamma = 0.05       # recovery rate
@@ -12,9 +12,9 @@ vax_rates = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 
 plt.figure(figsize=(8, 5), dpi=150)
 
-# --- 2. Loop through each vaccination rate and simulate the SIR model ---
+#  Loop through each vaccination rate and simulate the SIR model 
 for i, v_rate in enumerate(vax_rates):
-    # --- 2. Initialize the population counts (total always remains N) ---
+    #  Initialize the population counts (total always remains N) 
     V_count = int(N * v_rate)       # vaccinated individuals
     I_count = 1                     # initial infected individuals
     R_count = 0                     # initial recovered individuals
@@ -23,9 +23,9 @@ for i, v_rate in enumerate(vax_rates):
     # track the history of infected individuals for plotting
     I_history = [I_count]
 
-    # --- time loop ---
+    #  time loop 
     for t in range(time_steps):
-        # --- Calculate Infection Process ---
+        #  Calculate Infection Process 
         # The probability that each susceptible individual gets infected = beta * (current infected / total population
         p_inf = beta * (I_count / N)
         p_rec = gamma
@@ -49,7 +49,7 @@ for i, v_rate in enumerate(vax_rates):
         
         I_history.append(I_count)
 
-    # --- 3. Plotting and Labeling ---
+    #  Plotting and Labeling 
     plt.plot(I_history, label=f'{v_rate*100:.0f}% Vaccinated', color=cm.viridis(i/len(vax_rates)))
 
 # set the labels and title
