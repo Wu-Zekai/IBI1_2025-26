@@ -1,0 +1,20 @@
+Thanks for giving a detailed feedback provided for my practicals in Weeks 3, 4, and 5. I am writing to share my reviews of these comments. I have now recognized the gap between simply writing "working code" and producing professional, well-documented, and accurate scientific scripts. I have since updated my GitHub repository to reflect the following changes.
+
+
+Reflection on Week 3
+Regarding the feedback for Week 3, I realized that I had overlooked a fundamental aspect of my personal website by forgetting to include my name. This was a simple but important oversight, and I have now updated my website to ensure proper identification. Furthermore, I recognize that my commit messages were far too brief to be truly informative. I initially viewed commits as just a technical step, but I now understand they are a vital communication tool. Moving forward, I have adopted more descriptive and structured commit messages to better document the evolution of my projects.
+
+Reflection on Week 4
+The feedback for Week 4 highlighted that while my scripts were functional, my documentation was insufficient. In variables.py, I failed to store the comparison result as a comment and missed the truth table; I have now added a comprehensive truth table for the "OR" logic and clear comments regarding Scotland's population growth trends.
+
+In infection.py and creatine_clearance.py, I felt that my initial pseudocode was a bit rushed. I have now expanded these sections to provide a clear, step-by-step logical roadmap, which has actually made my final code much easier to read. 
+
+Most importantly, the feedback on mystery_code.py helped me catch a logical error: I originally thought the loop ran 10 times, but I now see that a while progress <= 10 loop starting from 0 actually results in 11 iterations. I have corrected the answer in the script to reflect this.
+
+Reflection on Week 5
+For Week 5, I was disappointed in myself for the spelling error with "BRCA1" and the incorrect value for "MYC." In biomedical informatics, such small typos can lead to significant data errors. I have corrected the spelling and updated the MYC value to the requested 11.6. I also implemented the missing gene-querying variable and the average expression calculation, which I had previously missed.
+
+Regarding the population growth task, I realized I had used an ascending sort instead of the requested descending order. I have updated the code using np.argsort()[::-1] to ensure the data is displayed from the largest increase to the largest decrease, which makes the identification of extreme values much more intuitive. I also ensured that all bar and pie charts are fully labeled with titles and axis descriptions to meet professional standards.
+
+
+Overall, this feedback process has taught me that precision, spelling, and thorough documentation are just as important as the code itself. I am committed to maintaining these higher standards in my future assignments to ensure my work is both scientifically accurate and accessible to others.
