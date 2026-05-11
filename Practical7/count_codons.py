@@ -1,3 +1,25 @@
+# PSEUDOCODE:
+# 1. Define a function 'get_user_input' to:
+#    - Prompt the user to enter a stop codon (TAA, TAG, or TGA).
+#    - Use a while loop to ensure the input is valid and case-insensitive.
+# 2. Define a function 'get_upstream_codons' to identify the longest ORF:
+#    - Locate the first 'ATG' in the sequence as the start index.
+#    - Extract the coding sequence and split it into triplets (codons).
+#    - Find all positions where the user-specified stop codon occurs in-frame.
+#    - Identify the LAST occurrence of that stop codon to ensure the longest ORF.
+#    - Return all codons located upstream of this specific stop codon.
+# 3. Define a function 'process_fasta_and_count':
+#    - Initialize a Counter object to aggregate codon frequencies.
+#    - Open the FASTA file and parse it line by line (handling multi-line sequences).
+#    - For each gene, call 'get_upstream_codons' and update the global Counter.
+# 4. Define a function 'create_visual_report':
+#    - Sort the codon counts in descending order for better visualization.
+#    - Create a large, high-resolution pie chart using matplotlib.
+#    - Include labels, percentages (autopct), and a title.
+#    - Save the plot as a .png file named after the chosen stop codon.
+# 5. In the MAIN section:
+#    - Execute the steps: Get input -> Process data -> Print Top 10 to console -> Save Chart.
+
 import matplotlib.pyplot as plt 
 from collections import Counter
 
