@@ -1,0 +1,7 @@
+This week's practical is supper hard and challenging.
+
+What I found most challenging was transitioning from the "well-mixed" population in the simple SIR model to the 2D Spatial SIR model. Specifically, managing the 8-neighbor indexing while ensuring the simulation didn't crash at the boundaries of the 100x100 grid required careful logical thinking. I also learned the importance of using .copy() when updating the population state to avoid simultaneous update errors, where new infections could spread prematurely within the same time step.
+
+One of the highlights was the vaccination simulation. It was highly satisfying to see the "herd immunity" effect visualized through color-mapped curves. It made me realize how a stochastic model can capture the randomness of real-life outbreaks much more realistically than a purely deterministic formula.
+
+The most important takeaway for me was mastering the use of NumPy's 'where' and 'random.choice' functions to handle large-scale probabilistic events efficiently. This practical has significantly boosted my confidence in building complex, multi-dimensional simulations in Python.
