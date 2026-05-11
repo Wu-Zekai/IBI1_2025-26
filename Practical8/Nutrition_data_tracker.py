@@ -1,4 +1,22 @@
+# PSEUDOCODE:
+# 1. DEFINE a class named 'food_item' to act as a template for nutritional data.
+#    - Initialize with attributes: name, calories, protein, carbohydrates, and fat.
+# 2. DEFINE a function 'report_daily_nutrition' that accepts a list of 'food_item' objects.
+#    - Initialize total counters for calories, protein, carbs, and fat to zero.
+#    - ITERATE through each item in the input list:
+#        a. Add the item's calories to the total_calories.
+#        b. Add the item's protein to the total_protein.
+#        c. Add the item's carbohydrates to the total_carbs.
+#        d. Add the item's fat to the total_fat.
+#    - PRINT a formatted report showing the sum of all nutrients.
+#    - EVALUATE health thresholds:
+#        a. IF total_calories exceeds 2,500, PRINT a specific excess warning.
+#        b. IF total_fat exceeds 90g, PRINT a specific excess warning.
+# 3. CREATE example instances of the 'food_item' class (e.g., Apple, Steak, Pizza).
+# 4. EXECUTE the function using different combinations of food items to test 
+#    normal consumption and the warning logic for excessive intake.
 # Define the class to represent a food item with its nutritional information
+
 class food_item:
     def __init__(self, name, calories, protein, carbs, fat):
         self.name = name
