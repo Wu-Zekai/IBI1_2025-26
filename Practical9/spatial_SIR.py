@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# =================================================================
 # PSEUDOCODE 
 # 1. initialize a 100x100 two-dimensional array, all elements set to 0 (susceptible S).
 # 2. randomly select a coordinate (x, y) as the initial outbreak point, and set it to 1 (infected I).
@@ -15,9 +14,8 @@ import matplotlib.pyplot as plt
 #       ii. if it remains infected, check its 8 neighbors (including diagonals):
 #       iii. if a neighbor is 0 (susceptible S), it has a beta probability of becoming infected (change to 1).
 #    e. use the updated map for the next iteration.
-# =================================================================
 
-# --- 1. initialize the population ---
+#  1. initialize the population 
 size = 100
 # create a 100x100 array to represent the population, where 0 = susceptible (S), 1 = infected (I), 2 = recovered (R)
 population = np.zeros((size, size)) 
@@ -34,7 +32,7 @@ time_steps = 100
 # record the history of infected individuals for plotting
 plot_times = [0, 10, 50, 100]
 
-# --- 2. time loop ---
+#  time loop 
 for t in range(time_steps + 1):
     
     # output (Series of plots)
