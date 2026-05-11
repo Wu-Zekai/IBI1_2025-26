@@ -5,9 +5,12 @@ def find_in_frame_stops(sequence):
     """
     stop_codons = ['TAA', 'TAG', 'TGA']
     found_in_sequence = []
+    start_idx = sequence.find('ATG')
+    if start_idx == -1:
+        return found_in_sequence
     
     # Iterate through the sequence in steps of 3
-    for i in range(0, len(sequence) - 2, 3):
+    for i in range(start_idx, len(sequence) - 2, 3):
         codon = sequence[i:i+3]
         if codon in stop_codons:
             found_in_sequence.append(codon)
@@ -22,14 +25,14 @@ def process_genes(input_file, output_file):
         header = None
         sequence_parts = []
 
-        # We use a loop to handle the multi-line FASTA format
+        # use a loop to handle the multi-line FASTA format
         for line in f_in:
             line = line.strip()
             if not line:
                 continue
 
             if line.startswith('>'):
-                # Process the PREVIOUS gene before starting the new one
+                # Process the previous gene before starting the new one
                 if header:
                     full_seq = "".join(sequence_parts).upper()
                     # Only process if it starts with ATG as per instructions
