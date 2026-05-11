@@ -1,3 +1,23 @@
+# PSEUDOCODE:
+# 1. Define a function 'find_in_frame_stops' that:
+#    - Locates the first occurrence of 'ATG' as the start index.
+#    - Scans the sequence from that index in steps of 3 (triplets).
+#    - Collects any 'TAA', 'TAG', or 'TGA' codons found in that reading frame.
+# 2. Open the input FASTA file for reading and 'stop_genes.fa' for writing.
+# 3. Iterate through the file line by line to handle multi-line FASTA sequences:
+#    - If a line starts with '>', it's a header: 
+#      a. Process the accumulated sequence of the previous gene.
+#      b. Extract the gene name from the current header.
+#      c. Reset the sequence buffer for the new gene.
+#    - If a line contains nucleotides, append it to the current sequence buffer.
+# 4. For each gene sequence that starts with 'ATG':
+#    - Call the helper function to find in-frame stop codons.
+#    - If at least one stop codon is found:
+#      a. Use a set to identify unique stop codon types (TAA/TAG/TGA).
+#      b. Write a new header to the output file containing the gene name and the found stop codons.
+#      c. Write the original sequence to the output file.
+# 5. Print the total number of genes analyzed and how many were written to the new file.
+
 def find_in_frame_stops(sequence):
     """
     Scans a sequence 3 nucleotides at a time starting from index 0.
