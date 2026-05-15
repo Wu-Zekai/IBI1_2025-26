@@ -1,0 +1,19 @@
+Summary of Findings - Practical 13
+
+1. Protein Information:
+The human DLX5 protein has a length of 289 amino acids and is localized in the Nucleus.
+
+2. BLAST Results:
+The online BLAST search within Eutheria provided several hits with identity percentages ranging from 52.3% to 100%.
+
+3. Python Alignment Analysis:
+My Python implementation calculated the following:
+
+Human vs Mouse: Score = 1490.0, Identity = 96.54%
+
+Human vs Random: Score = -296.0, Identity = .54%%
+
+Mouse vs Random: Score = -287.0, Identity = 6.23%%
+
+4. Interpretation:
+The results clearly show that the human and mouse DLX5 sequences are most closely related. The alignment score and identity percentage are significantly higher than those involving the random sequence. This high conservation suggests that DLX5 performs a critical biological function that has been preserved through evolution between these two mammalian species.
